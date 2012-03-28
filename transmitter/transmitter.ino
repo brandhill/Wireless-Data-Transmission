@@ -22,7 +22,8 @@ void loop() {
     digitalWrite(13, LOW);
   }
   
+  Serial.write(modulate(255)); // Send random packet to prepare for data transfer
   Serial.write(data); // Send the data
   
-  delay(100); // Pause briefly
+  delay(100); // Pause to avoid overloading the connection
 }
