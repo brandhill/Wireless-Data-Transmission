@@ -13,5 +13,7 @@ void loop() {
     } else if (data == 0) { // Turn off the LED it recieved a 0
       digitalWrite(13, LOW);
     }
+    
+    Serial.println(data);
   }
 }
